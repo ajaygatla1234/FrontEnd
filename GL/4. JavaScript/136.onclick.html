@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>The onclick Event</h2>
+    <!-- <button onclick="handleClick();">Click me</button> -->
+    <button>Click Me</button>
+    <p id="msg">Click the button to change this text</p>
+    <script>
+        function handleClick(){
+            alert("Button is clicked");
+            console.log("Button is clicked")
+        }
+
+        document.querySelector('button').onclick=handleClick;
+    </script>
+</body>
+</html>

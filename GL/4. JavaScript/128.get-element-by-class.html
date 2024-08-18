@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="class-1">
+        Hello, This is Paragraph.
+    </p>
+    <p class="class-1 subclass">
+        Hello, This is paragraph with class-1 and subclass.
+    </p>
+    <p class="class-1 subclass-2">
+        Hello, This is paragraph with class-1 and subclass-2.
+    </p>
+    <script>
+        var class1 = document.getElementsByClassName("class-1");
+        console.log(class1);
+        console.log(class1[0]);
+        console.log(class1[1]);
+        console.log(class1[3]);
+        console.log(class1.length);
+        var class2 = document.getElementsByClassName("class-1");
+        console.log(class2);
+        console.log(class2[0]);
+        console.log(class2[1]);
+        console.log(class2[3]);
+        console.log(class2.length);
+    </script>
+</body>
+</html>

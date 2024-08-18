@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>The Event Listener</h2>
+    <p id="msg">I am a paragraph</p>
+    <button>Click Me</button>
+    <script>
+        function handleClick1(){
+            console.log("Button is clicked from handleClick1()");
+            
+        }
+        alert("Excuted");
+        function handleClick2(){
+            console.log("Button is clicked from handleClick2()")
+        }
+        document.querySelector('button').onclick=handleClick1;
+        document.querySelector('button').onclick=handleClick2;
+
+        document.getElementById("msg").addEventListener('mouseover',
+        function(){
+            console.log("Mouse is over paragraph! V 1.0");
+        }
+        );
+        document.getElementById("msg").addEventListener('mouseover',
+        function(){
+            console.log("Mouse is over paragraph! V 2.0");
+        }
+        );
+        document.getElementById("msg").addEventListener('mouseover',
+        function(){
+            console.log("Mouse is over paragraph! V 3.0");
+        }
+        );
+
+
+    </script>
+</body>
+</html>

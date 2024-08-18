@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>The preventDefault() prevents the default behaviour of an event</h2>
+    <a href="https://www.google.com/">Visit Google Site!</a>
+    <script>
+        document.querySelector('a').addEventListener('click',
+            function(event){
+                //event.preventDefault();//will not navigate to the site
+                var shouldOpen=confirm("Are you sure to visit the google site...?");
+                if(!shouldOpen){
+                    event.preventDefault();
+                }
+            }
+        );
+    </script>
+</body>
+</html>

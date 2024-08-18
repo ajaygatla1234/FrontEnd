@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>The onclick Event using event context</h2>
+    <button>Click Me</button>
+    <script>
+        document.querySelector('button').addEventListener('click',
+            function (event){
+                console.log(this);  //<button>Click Me</button>
+                console.log(event);
+            }
+        );
+    </script>
+</body>
+</html>

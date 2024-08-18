@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="para1">
+        Hello i am a paragraph One
+    </p>
+
+    <p id="para2">
+        Hello i am a paragraph Two
+    </p>
+
+    <script>
+        var para = document.getElementById("para1").innerHTML;
+        console.log("Below is the paragraph content that has id-para");
+        console.log(para);  //Hello, I am a paragraph
+        //content of para changes after 2 seconds
+        setTimeout(function(){
+            document.querySelector('p:first-of-type').innerHTML='<span> Hi, I am in span element - innerHTML </span>';
+            para=document.getElementById("para1").innerHTML;
+            document.getElementById('para1').innerHTML='<span> Hi, I am in span element - innerHTML</span> ';
+            para=document.getElementById("para1").innerHTML;
+            console.log(para);
+            document.querySelector('p:last-of-type').innerText='<span> Hi, I am in span element - innerHTML</span> ';
+            para=document.getElementById("para2").innerHTML;
+            console.log(para);
+        },5000);
+    </script>
+</body>
+
+</html>

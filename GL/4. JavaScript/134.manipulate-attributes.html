@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="C:\Users\ajayg\Downloads\WhatsApp Image 2024-03-29 at 10.40.44_52dc4995.jpg" width="500" height="500">
+    <button onclick="changeImage();">Change Image</button>
+    <script>
+        function changeImage(){
+            document.querySelector('img').src='WhatsApp Image 2024-03-15 at 10.50.25_4aec027a.jpg';
+            console.log(document.querySelector('img').hasAttribute("src"));
+            console.log(document.querySelector('img').hasAttribute("alt"));
+
+            //returns the image file name.
+            console.log(document.querySelector('img').getAttribute('src'));
+            document.querySelector('img').setAttribute('alt',"Srinu");
+            console.log(document.querySelector('img').hasAttribute('alt'));
+            console.log(document.querySelector('img').getAttribute('alt'));
+        }
+    </script>
+</body>
+</html>

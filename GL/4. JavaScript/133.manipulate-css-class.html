@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .big {
+            font-size: 25px;
+        }
+
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam optio minus corrupti dignissimos accusantium
+        quidem quod, illo aspernatur nisi, consequuntur deleniti id illum, aliquam ullam? Optio, nobis. Quo, aperiam
+        reiciendis!
+    </p>
+    <button onclick="addCssClass()">Add a CSS Class to paragraph</button>
+    <br><br>
+    <button onclick="deleteCssClass()">Delete a CSS Class from a paragraph</button>
+
+    <script>
+        function addCssClass() {
+            document.getElementsByTagName('p')[0].classList.add("big");
+            document.getElementsByTagName('p')[0].classList.add("red");
+        }
+
+        function deleteCssClass() {
+            document.getElementsByTagName('p')[0].classList.remove("big");
+            // document.getElementsByTagName('p')[0].classList.remove("red");
+        }
+
+    </script>
+
+</body>
+
+</html>

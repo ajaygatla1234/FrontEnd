@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="class-1">
+        Hello, This is Paragraph.
+    </p>
+    <p class="class-1 subclass">
+        Hello, This is paragraph with class-1 and subclass.
+    </p>
+    <p class="class-1 subclass-2">
+        Hello, This is paragraph with class-1 and subclass-2.
+    </p>
+    <script>
+        var qsl = document.querySelector('.class-1');
+        console.log(qsl);
+        var qsl2 = document.querySelectorAll('.class-1');
+        console.log(qsl2);
+        console.log(qsl2[2]);
+    </script>
+</body>
+</html>

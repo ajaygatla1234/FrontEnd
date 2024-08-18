@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div-gp,#div-p,#div-c{
+            border: 10px solid red;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div-gp">
+        <div id="div-p">
+            <div id="div-c">
+                <font size="40px">I am div Child</font>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector('#div-c').addEventListener('click',function()
+        {
+            console.log("I am Child");
+        }
+        );
+
+        document.querySelector('#div-p').addEventListener('click',function()
+        {
+            //stops at parent and grand parent event will not navigate
+            event.stopPropagation();
+            console.log("I am Parent, i cannot navigate to grand parent");
+            console.log(event.target);
+        }
+        );
+        document.querySelector('#div-gp').addEventListener('click',function()
+        {
+            console.log("I am Grand Parent");
+            console.log(event.target);
+        }
+        );
+    </script>
+</body>
+</html>
