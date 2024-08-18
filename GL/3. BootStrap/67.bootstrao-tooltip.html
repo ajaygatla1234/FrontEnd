@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Tooltip</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Tooltip Example</h3>
+        <p>Th data-placement attribute specifies the tooltip position</p>
+        <ul class="list-inline">
+            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Top Link!">Top</a></li>
+            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Bottom Link!">Bottom</a></li>
+            <li><a href="#" data-toggle="tooltip" data-placement="left" title="Left Link!">Left</a></li>
+            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Right Link!">Right</a></li>
+        </ul>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        })
+    </script>
+
+</body>
+
+</html>
