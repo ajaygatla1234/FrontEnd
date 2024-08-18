@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+
+    <style>
+        @keyframes example {
+            from {background-color: red;}
+            to {background-color: yellow;}
+
+            from {background-color: yellow;}
+            to {background-color: black;}
+
+            /* from {background-color: black;}
+            to {background-color: blue;} */
+        }
+
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 4s;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+       <p><b>Note: </b>when an animation is finished, it gets back to the original color</p>
+    
+</body>
+</html>
